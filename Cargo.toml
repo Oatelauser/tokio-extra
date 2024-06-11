@@ -1,0 +1,19 @@
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["tokio-runtime"]
+
+[workspace.dependencies]
+tokio = "1"
+tokio-util = "0"
+tokio-metrics = "0"
+tokio-metrics-collector = "0"
+prometheus = "0"
+
+async-trait = "0"
+paste = "1"
+
+snafu = "0"
+snafu-stack-error = { git = "https://github.com/Oatelauser/snafu-stack-error.git" }

@@ -1,0 +1,17 @@
+[package]
+name = "tokio-runtime"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+tokio = { workspace = true }
+tokio-util = { workspace = true }
+tokio-metrics = { workspace = true }
+tokio-metrics-collector = { workspace = true }
+prometheus = { workspace = true }
+
+async-trait = { workspace = true }
+paste = { workspace = true }
+
+snafu = { workspace = true }
+snafu-stack-error = { workspace = true }
