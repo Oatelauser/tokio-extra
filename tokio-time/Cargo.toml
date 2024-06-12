@@ -1,0 +1,8 @@
+[package]
+name = "tokio-time"
+version.workspace = true
+edition.workspace = true
+description = "Highly efficient async timer and timeout system for Tokio runtimes."
+
+[dependencies]
+tokio = { workspace = true, features = ["time", "rt-multi-thread", "macros", "sync"] }
