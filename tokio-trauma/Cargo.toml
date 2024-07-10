@@ -1,0 +1,23 @@
+[package]
+name = "tokio-trauma"
+version.workspace = true
+edition.workspace = true
+
+[dependencies]
+trauma = "2"
+tracing = { workspace = true }
+snafu = { workspace = true }
+snafu-stack-error = { workspace = true }
+
+# async crate
+futures-util = { workspace = true }
+tokio = { workspace = true }
+
+# HTTP Client crate
+url = { workspace = true }
+urlencoding = { workspace = true }
+reqwest = { workspace = true }
+reqwest-middleware = { workspace = true }
+retry-policies = { workspace = true }
+reqwest-retry = { workspace = true }
+reqwest-tracing = { workspace = true }

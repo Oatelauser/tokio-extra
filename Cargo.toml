@@ -3,13 +3,14 @@ version = "0.1.0"
 edition = "2021"
 
 [workspace]
-members = ["tokio-runtime", "tokio-time"]
+members = ["tokio-runtime", "tokio-time", "tokio-trauma"]
 
 [workspace.dependencies]
 futures = "0"
 async-trait = "0"
 pin-project-lite = "0"
 
+futures-util = "0"
 tokio = "1"
 tokio-util = "0"
 tokio-metrics = "0"
@@ -19,5 +20,17 @@ paste = "1"
 prometheus = "0"
 parking_lot = "0"
 
+
+tracing = "0"
+
 snafu = "0"
 snafu-stack-error = { git = "https://github.com/Oatelauser/snafu-stack-error.git" }
+
+
+url = "2"
+urlencoding = "2"
+reqwest = "0"
+reqwest-middleware = "0"
+retry-policies = "0"
+reqwest-retry = "0"
+reqwest-tracing = "0"
